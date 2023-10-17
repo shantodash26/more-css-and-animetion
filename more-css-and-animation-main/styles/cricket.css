@@ -2,12 +2,15 @@
     height: 500px;
     width:  100%;
     background-color: darkgoldenrod;
+    background-image: url(../images/download.jpeg);
+    background-repeat: repeat-y;
+
     
 }
 .bat{
     transition: transform 0.6s ease-in;
     position: relative;
-    left: 50px;
+    left: 100px;
 }
 .field:hover .bat{
      transform: rotate(-90deg);
@@ -20,7 +23,7 @@
     background-color: brown;
     border-radius: 50%;
     position: relative;
-    left: 600px;
+    left: 650px;
     transition: transform 1s ease-out 0.5s;
 
 }
@@ -28,6 +31,4 @@
     transform: translate(900px ,-400px);
     
     
-}
-
 }
