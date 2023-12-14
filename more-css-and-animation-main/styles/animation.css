@@ -12,17 +12,26 @@ body{
 .stage{
     
     height: 200px;
-    width: 600px;
+    width: 690px;
     background-color: cornflowerblue;
 }
+.ball:hover{
+   /* transition: 3s; */
+    animation: sliding 3s ease-in-out 0.5s infinite alternate  ;
+    position: relative;
+   animation-play-state: running;
+}
+
+
+
 .ball{
     height: 50px;
     width: 50px;
     background-color: red;
     border-radius: 100%;
-    animation: sliding 2s ease-in-out 0.5s infinite alternate ;
-    position: relative;
-    animation-play-state: running;
+    /* animation: sliding 3s ease-in-out 0.5s infinite alternate  ;
+     position: relative;
+    animation-play-state: running; */
 }
 @keyframes sliding {
     0%{
@@ -39,19 +48,20 @@ body{
     50%{
         top: 150px;
     }
-    
-60%{
-    top: 150px;
-}
     70%{
-        top: 0;
+        top: 0px;
     }
-    
-    100%{
-        background-color:yellow;
-        left: 550px;
+    80%{
         top: 150px;
     }
+    100%{
+       background-color: yellow; 
+       left: 640px;
+       top: 150px;
+    }
+    
+
+
 }
 .pilar{
     display: flex;
@@ -59,22 +69,17 @@ body{
 .pilar-1{
     height: 120px;
     width: 50px;
-    background-color: blanchedalmond;
+    background-color: chartreuse;
     place-items: center;
     margin-top: 30px;
-    margin-left: 170px;
+    margin-left: 180px;
 }
 .pilar-2{
     height: 120px;
     width: 50px;
-    background-color: blanchedalmond;
+    background-color: chartreuse;
     place-items: center;
     margin-top: 30px;
-    margin-left: 250px;
+    margin-left: 260px;
 }
     
-.ball-2{
-    height: 50px;
-    width: 50px;
-    background-color: aqua;
-}
